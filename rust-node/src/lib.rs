@@ -1,5 +1,9 @@
 use serde::Deserialize;
 
+pub mod util;
+pub mod account;
+pub mod vote;
+
 #[derive(Debug, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct ProofConfig {
